@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    flex-basis: calc(100% / 6);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+.cont-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cont-info div {
+    flex-basis: 100%;
+}
+.pad {
+    padding: 3px 0;
+}
