@@ -22,6 +22,7 @@ class TrainsTableSeeder extends Seeder
             $newTrain->azienda = $faker->company();
             $newTrain->stazione_di_partenza = $faker->cityPrefix();
             $newTrain->stazione_di_arrivo = $faker->cityPrefix();
+            $newTrain->partenza = $faker->dateTimeInInterval('-1 week','+2 weeks');
             $newTrain->orario_partenza = $faker->time();
             $newTrain->orario_arrivo = $faker->time();
             $newTrain->codice_treno = $faker->regexify('[A-Z]{5}[0-4]{3}');

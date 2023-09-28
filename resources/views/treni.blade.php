@@ -23,20 +23,21 @@
                         <div class="pad">Dalla stazione di {{ $train->stazione_di_partenza }}</div>
                         <div class="pad">Alla stazione di {{ $train->stazione_di_arrivo }}</div>
                     </div>
+                    <div class="pad">Data partenza: {{ $train->partenza }}</div>
                     <div class="pad">Codice treno: {{ $train->codice_treno }}</div>
                     <div class="pad">Numero carrozze: {{ $train->numero_carrozze }}</div>
                     <div class="pad">
                         @if($train->in_orario)
-                            <div>In orario</div>
+                            <div class="success">In orario</div>
                         @else
-                            <div>In ritardo</div>
+                            <div class="fail">In ritardo</div>
                         @endif
                     </div>
                     <div class="pad">
                         @if($train->cancellato)
-                            <div>Corsa cancellata</div>
+                            <div class="fail">Corsa cancellata</div>
                         @else
-                            <div>Corsa attiva</div>
+                            <div class="success">Corsa attiva</div>
                         @endif
                     </div>
                 </div>
